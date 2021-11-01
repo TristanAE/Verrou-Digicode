@@ -13,6 +13,8 @@ Le système de la Nodemcu + Motorshield, plus petit avec Wifi et seulement 2 mot
 
 Le Motorshield utilisé vient donc s’emboiter sur la carte Arduino et les deux sont ensuite placés à l’intérieur d’une boite IPhone qui est attachée sur la porte à l’extérieur de la chambre.
 
+![Image1](https://user-images.githubusercontent.com/92324336/139721845-fbbda448-a35c-4a8e-94ab-cb61105cec80.jpg)
+
  
 b)	L’actionneur linéaire
 
@@ -25,22 +27,32 @@ L’actionneur linéaire est connecté au premier emplacement des moteurs car on
 c)	Le Keypad
 
 Le Keypad utilisé est un 4×4 avec 8 pins à connecter à l’Arduino. Cependant avec la présence du Motorshield, plus que 6 pins analogiques sont disponibles et nous devons obligatoirement les souder pour les rajouter.
+
+![Image2](https://user-images.githubusercontent.com/92324336/139721882-de53c350-70a3-4f73-bdaa-bba8e765d101.jpg)
+
  
 Etant donné que nous ne pouvons utiliser que 6 pins sur 8 nous devons sacrifier une ligne et une colonne du Keypad qui ne pourront pas être connectées.
 La ligne supprimée est celles des symboles et la colonne est celle des lettres.
 
-
+![Image3](https://user-images.githubusercontent.com/92324336/139721977-a61fb674-9a8a-491a-9093-0ce1aa1e3ebe.png)
 
  
 
 Selon le schéma ci-dessus nous pouvons supposer que R4 est la dernière ligne et C4 la dernière colonne.
 Nous connectons donc les pins du Motorshield de la manière suivante :
 
+
+
 A0	R1
+
 A1	R2
+
 A2	R3
+
 A3	C1
+
 A4	C2
+
 A5	C3
 
 Le Keypad vient se coller sur la face du boitier.
@@ -94,5 +106,7 @@ Les pins de la vitesse et de la direction de l’emplacement 1 des moteurs sont 
 
 On met dès le départ la vitesse du moteur 1 au maximum et on rétracte l’actionneur linéaire pour fermer.
 Si le mot de passe est correct alors on déploie l’actionneur
+
+![Image4 (1)](https://user-images.githubusercontent.com/92324336/139722311-309ce73f-6b7e-4022-828f-737cbf0f8b2b.gif)
 
  
